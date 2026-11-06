@@ -85,7 +85,7 @@ fastmcp = ["fastmcp>=2.14,!=3.0.*,<5"]
 a2a = ["a2a-sdk>=1.1,<2"]
 # Proxy custom-guardrail contract verified against the stable 1.104.2 release.
 # Keep this line narrow; new LiteLLM minors need explicit hook compatibility checks.
-litellm = ["litellm>=1.104.2,<1.105"]
+litellm = ["litellm>=1.104.2,<1.107"]
 dev = [
   "pytest>=8",
   "pytest-asyncio>=0.23",
@@ -102,7 +102,7 @@ integration = ["testcontainers>=4"]
 # CycloneDX SBOM generator (see scripts/generate_sbom.sh). Pinned here — not in the shell
 # script — so Dependabot's pip ecosystem keeps it current, matching the repo's pinned-and-
 # maintained posture. Build-only tooling, like `build`/`twine`; never a runtime dependency.
-sbom = ["cyclonedx-bom==7.5.0"]
+sbom = ["cyclonedx-bom==7.6.0"]
 
 [project.urls]
 Homepage = "https://github.com/counterbranch/apparitor"
